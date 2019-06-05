@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="boarml",
-    version="0.0.1",
+    version="0.0.2",
     author="Dobromir Marinov",
     author_email="mr.d.marinov@gmail.com",
     description="Package for building abstract ML models that can then be compiled using popular ML platforms.",
