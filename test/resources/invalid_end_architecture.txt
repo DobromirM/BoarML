@@ -1,0 +1,6 @@
+-Unit-(0)
+---Output---(3)
+FlattenLayer()
+DenseLayer(nodes=10)
+ActivationLayer(func="softmax")
+<<<<<END>>>>>

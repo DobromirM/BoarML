@@ -1,0 +1,5 @@
+-Unit-(4)
+DenseLayer(nodes=5)
+FlattenLayer()
+BatchNormalizationLayer(momentum=3)
+ConvLayer(filters=96; kernel_size=(3, 3); strides=(1, 1))

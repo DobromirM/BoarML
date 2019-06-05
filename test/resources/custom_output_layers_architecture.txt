@@ -1,0 +1,10 @@
+<<<<<START>>>>>
+---Input---(1)
+InputLayer(shape=(32, 32))
+---Main---(1)
+-Unit-(0)
+---Output---(3)
+PoolingLayer(operation="max"; pool_size=(2, 2); strides=(2, 2))
+DropoutLayer(rate=0.2)
+FlattenLayer()
+<<<<<END>>>>>

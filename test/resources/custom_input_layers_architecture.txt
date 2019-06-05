@@ -1,0 +1,12 @@
+<<<<<START>>>>>
+---Input---(3)
+InputLayer(shape=(13, 13))
+ConvLayer(filters=64; kernel_size=(4, 4); strides=(2, 2))
+ActivationLayer(func="relu")
+---Main---(1)
+-Unit-(0)
+---Output---(3)
+FlattenLayer()
+DenseLayer(nodes=10)
+ActivationLayer(func="softmax")
+<<<<<END>>>>>

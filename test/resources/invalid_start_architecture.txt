@@ -1,0 +1,6 @@
+<<<<<START>>>>>
+---Input---(1)
+InputLayer(shape=(32, 32))
+---Main---(1)
+-Unit-(0)
+---Output---(3)
