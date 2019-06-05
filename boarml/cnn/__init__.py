@@ -1,2 +1,3 @@
 from .layers import *
-from .unit import *
+from .unit import Unit
+from .model import Model
