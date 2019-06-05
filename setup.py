@@ -11,7 +11,7 @@ setuptools.setup(
     description="Package for building abstract ML models that can then be compiled using popular ML platforms.",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://cseegit.essex.ac.uk/dm16504/boar-ml",
+    url="https://github.com/DobromirM/BoarML",
     packages=setuptools.find_packages(exclude=['test']),
     classifiers=[
         "Programming Language :: Python :: 3",
