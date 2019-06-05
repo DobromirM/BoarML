@@ -7,10 +7,10 @@ import numpy as np
 
 
 # Preparing the data
-def getImageData(dataSet, num_classes):
-    if dataSet == 'mnist':
+def get_image_data(data_set, num_classes):
+    if data_set == 'mnist':
         (x_train, y_train), (x_test, y_test) = tf.keras.datasets.mnist.load_data()
-    elif dataSet == 'cifar10':
+    elif data_set == 'cifar10':
         (x_train, y_train), (x_test, y_test) = tf.keras.datasets.cifar10.load_data()
     else:
         raise Exception('Invalid Dataset!')
@@ -43,7 +43,7 @@ def getImageData(dataSet, num_classes):
 
 
 num_classes = 10
-x_train, y_train, x_test, y_test = getImageData('cifar10', num_classes)
+x_train, y_train, x_test, y_test = get_image_data('cifar10', num_classes)
 shape = x_train.shape[1:]
 batch_size = 128
 
