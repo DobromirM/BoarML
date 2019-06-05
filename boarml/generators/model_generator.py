@@ -122,7 +122,7 @@ class ModelGenerator:
         selected = self.rnd.choice(choices)
 
         if selected == 'filter':
-            filters_choices = [64, 128, 256, 320, 512, 700, 960, 1280, 2048]
+            filters_choices = [64, 128, 256, 320, 512, 700]
             filter_selected = self.rnd.choice(filters_choices)
 
             mutated = ConvLayer(filters=filter_selected, kernel_size=layer.kernel_size, strides=layer.strides)
