@@ -2,7 +2,7 @@ from keras.layers import Conv2D, Activation, Dense, Flatten, BatchNormalization,
 from keras.engine import InputLayer
 from keras.optimizers import Adadelta
 
-from builders.base_builder import BaseBuilder
+from boarml.builders.base_builder import BaseBuilder
 from keras import Sequential
 
 from boarml.cnn import Layers
