@@ -5,8 +5,8 @@ from keras.optimizers import Adadelta
 from builders.base_builder import BaseBuilder
 from keras import Sequential
 
-from cnn import Layers
-from cnn.model import Model
+from boarml.cnn import Layers
+from boarml.cnn import Model
 
 
 class KerasBuilder(BaseBuilder):

@@ -1,4 +1,4 @@
-from cnn import *
+from boarml.cnn import *
 from enum import IntEnum
 
 

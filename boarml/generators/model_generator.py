@@ -1,10 +1,10 @@
 import copy, os
 
-from architectures.cnn_architecture import CnnBaseArchitecture
-from cnn.layers import Layers, ConvLayer, DropoutLayer, BatchNormalizationLayer, PoolingLayer
-from cnn.unit import Unit
+from boarml.architectures.cnn_architecture import CnnBaseArchitecture
+from boarml.cnn.layers import Layers, ConvLayer, DropoutLayer, BatchNormalizationLayer, PoolingLayer
+from boarml.cnn.unit import Unit
 from random import Random
-from builders.keras_builder import KerasBuilder
+from boarml.builders.keras_builder import KerasBuilder
 
 
 class ModelGenerator:
