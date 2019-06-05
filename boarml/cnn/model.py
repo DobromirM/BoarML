@@ -11,3 +11,7 @@ class Model:
     def predict(self, x_test):
         if self.type == 'keras':
             return self.model.predict(x_test)
+
+    def evaluate(self, x_test, y_test):
+        if self.type == 'keras':
+            return self.model.evaluate(x_test, y_test)
