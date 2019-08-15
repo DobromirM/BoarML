@@ -9,7 +9,7 @@ class TestCnnArchitecture(unittest.TestCase):
         # Given
         architecture = CnnBaseArchitecture(input_shape=(32, 32), output_nodes=10)
 
-        with open('resources/empty_architecture.txt', 'r') as input_file:
+        with open('test/resources/empty_architecture.txt', 'r') as input_file:
             expected = input_file.read()
 
         # When
@@ -29,7 +29,7 @@ class TestCnnArchitecture(unittest.TestCase):
         # Given
         architecture = CnnBaseArchitecture(input_shape=(32, 32), output_nodes=10)
 
-        with open('resources/simple_architecture.txt', 'r') as input_file:
+        with open('test/resources/simple_architecture.txt', 'r') as input_file:
             expected = input_file.read()
 
         # When
@@ -51,7 +51,7 @@ class TestCnnArchitecture(unittest.TestCase):
         # Given
         architecture = CnnBaseArchitecture(input_shape=(32, 32, 3), output_nodes=10)
 
-        with open('resources/complex_architecture.txt', 'r') as input_file:
+        with open('test/resources/complex_architecture.txt', 'r') as input_file:
             expected = input_file.read()
 
         # When
@@ -89,7 +89,7 @@ class TestCnnArchitecture(unittest.TestCase):
         # Given
         architecture = CnnBaseArchitecture(input_shape=(32, 32), output_nodes=10)
 
-        with open('resources/custom_input_layers_architecture.txt', 'r') as input_file:
+        with open('test/resources/custom_input_layers_architecture.txt', 'r') as input_file:
             expected = input_file.read()
 
         # When
@@ -117,7 +117,7 @@ class TestCnnArchitecture(unittest.TestCase):
         # Given
         architecture = CnnBaseArchitecture(input_shape=(32, 32), output_nodes=10)
 
-        with open('resources/custom_output_layers_architecture.txt', 'r') as input_file:
+        with open('test/resources/custom_output_layers_architecture.txt', 'r') as input_file:
             expected = input_file.read()
 
         # When
@@ -144,7 +144,7 @@ class TestCnnArchitecture(unittest.TestCase):
         # Given
         architecture = CnnBaseArchitecture(input_shape=(32, 32), output_nodes=10)
 
-        with open('resources/custom_main_layers_architecture.txt', 'r') as input_file:
+        with open('test/resources/custom_main_layers_architecture.txt', 'r') as input_file:
             expected = input_file.read()
 
         # When
@@ -195,7 +195,7 @@ class TestCnnArchitecture(unittest.TestCase):
 
         # When
         actual = CnnBaseArchitecture()
-        actual = actual.build_from_file('resources/empty_architecture.txt')
+        actual = actual.build_from_file('test/resources/empty_architecture.txt')
 
         # Then
         self.assertEqual(str(expected), str(actual))
@@ -213,7 +213,7 @@ class TestCnnArchitecture(unittest.TestCase):
 
         # When
         actual = CnnBaseArchitecture()
-        actual = actual.build_from_file('resources/simple_architecture.txt')
+        actual = actual.build_from_file('test/resources/simple_architecture.txt')
 
         # Then
         self.assertEqual(str(expected), str(actual))
@@ -250,7 +250,7 @@ class TestCnnArchitecture(unittest.TestCase):
 
         # When
         actual = CnnBaseArchitecture()
-        actual = actual.build_from_file('resources/complex_architecture.txt')
+        actual = actual.build_from_file('test/resources/complex_architecture.txt')
 
         # Then
         self.assertEqual(str(expected), str(actual))
@@ -260,11 +260,11 @@ class TestCnnArchitecture(unittest.TestCase):
         actual = CnnBaseArchitecture()
 
         # Then
-        self.assertRaises(Exception, actual.build_from_file, 'resources/invalid_start_architecture.txt')
+        self.assertRaises(Exception, actual.build_from_file, 'test/resources/invalid_start_architecture.txt')
 
     def test_build_invalid_end(self):
         # When
         actual = CnnBaseArchitecture()
 
         # Then
-        self.assertRaises(Exception, actual.build_from_file, 'resources/invalid_end_architecture.txt')
+        self.assertRaises(Exception, actual.build_from_file, 'test/resources/invalid_end_architecture.txt')

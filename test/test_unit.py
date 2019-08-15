@@ -20,7 +20,7 @@ class TestUnit(unittest.TestCase):
         # Given
         test_unit = Unit()
 
-        with open('resources/single_layer_unit.txt', 'r') as input_file:
+        with open('test/resources/single_layer_unit.txt', 'r') as input_file:
             expected = input_file.read()
 
         # When
@@ -35,7 +35,7 @@ class TestUnit(unittest.TestCase):
         # Given
         test_unit = Unit()
 
-        with open('resources/multi_layer_unit.txt', 'r') as input_file:
+        with open('test/resources/multi_layer_unit.txt', 'r') as input_file:
             expected = input_file.read()
 
         # When
