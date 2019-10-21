@@ -1,5 +1,7 @@
 import unittest
-from boarml.cnn.layers import *
+
+from boarml import InputLayer
+from boarml.cnn.layers import Layers, ConvLayer, ActivationLayer, DenseLayer, BatchNormalizationLayer, FlattenLayer, DropoutLayer, PoolingLayer
 
 
 class TestLayers(unittest.TestCase):

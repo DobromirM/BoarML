@@ -1,6 +1,6 @@
 import unittest
-from boarml.generators import *
-from boarml.architectures import *
+
+from boarml import CnnBaseArchitecture, ModelGenerator
 
 
 class TestModelGenerator(unittest.TestCase):

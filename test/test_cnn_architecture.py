@@ -1,6 +1,9 @@
 import unittest
+
+from boarml import Unit
 from boarml.architectures import CnnBaseArchitecture
-from boarml.cnn import *
+from boarml.cnn.layers import Layers, BatchNormalizationLayer, ConvLayer, PoolingLayer, DropoutLayer, ActivationLayer, InputLayer, FlattenLayer, \
+    DenseLayer
 
 
 class TestCnnArchitecture(unittest.TestCase):

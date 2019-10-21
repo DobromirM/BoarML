@@ -1,5 +1,6 @@
 import unittest
-from boarml.cnn import *
+
+from boarml import Unit, DenseLayer, FlattenLayer, BatchNormalizationLayer, ConvLayer
 
 
 class TestUnit(unittest.TestCase):
